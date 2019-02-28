@@ -40,7 +40,7 @@ response = client.add_role_to_instance_profile(
     InstanceProfileName='ec2-ssm-new',
     RoleName='ec2-ssm'
 )
-# Attaching s3 full access policy  to "lambda_s3" role
+# Attaching ssm full access policy  to "ec2-ssm" role
 client = boto3.client('iam')
 response = client.attach_role_policy(
     RoleName='ec2-ssm',
