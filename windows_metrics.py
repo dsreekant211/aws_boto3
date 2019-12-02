@@ -36,7 +36,7 @@ def get_all_instances():
             },
             {
                'Name': 'private-ip-address',
-               'Values': [ "10.235.200.163",]
+               'Values': [ "",]
             },
             # {
             #     'Name': 'tag-key',
@@ -44,7 +44,7 @@ def get_all_instances():
             # }
             # {
             #     'Name': 'ip-address',
-            #     'Values': ['18.140.186.61',]
+            #     'Values': ['',]
             # }
         ],
         DryRun=False,
@@ -158,12 +158,3 @@ def get_metrices(data):
 if __name__ == "__main__":
     d = get_all_instances()
     get_metrices(d)
-# 10.235.201.13 typesetting3
-# 10.235.201.139 typesetting4
-# 10.235.201.130 typesetting5
-# 10.235.200.5 spice 2
-# 10.235.200.188 spice 6
-# 10.235.200.217 spice 7
-# 10.235.200.18  spice 8
-# 10.235.200.34 spice 9
-# 10.235.200.163 spice 13
